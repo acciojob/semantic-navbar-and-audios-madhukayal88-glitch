@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Navbar and Audio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="/" class="site-logo">MySite</a>
+            <ul>
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Audio Player</h1>
+        <section class="audio-section">
+            <div class="audio-player-container">
+                <h2>Random Audio 1</h2>
+                <audio controls>
+                    <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-player-container">
+                <h2>Random Audio 2</h2>
+                <audio controls>
+                    <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-player-container">
+                <h2>Random Audio 3</h2>
+                <audio controls>
+                    <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
