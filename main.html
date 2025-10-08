@@ -1,38 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic Navbar and Audio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<!-- Add custom buttons to your HTML -->
+<div class="audio-container">
+    <audio id="customAudio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"></audio>
+    <div class="custom-controls">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+    </div>
+</div>
 
-    <header>
-        <nav aria-label="Main navigation">
-            <ul class="navbar-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<script>
+    const customAudio = document.getElementById('customAudio');
+    const playBtn = document.getElementById('playBtn');
+    const pauseBtn = document.getElementById('pauseBtn');
 
-    <main>
-        <section class="audios-section">
-            <h1>Audio Samples</h1>
-            <p>Click the play button to listen to some sounds.</p>
-            <div class="audio-container">
-                <audio id="audio1" controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
-            </div>
-            <div class="audio-container">
-                <audio id="audio2" controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
-            </div>
-            <div class="audio-container">
-                <audio id="audio3" controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
-            </div>
-        </section>
-    </main>
+    playBtn.addEventListener('click', () => {
+        customAudio.play();
+    });
 
-</body>
-</html>
+    pauseBtn.addEventListener('click', () => {
+        customAudio.pause();
+    });
+</script>
