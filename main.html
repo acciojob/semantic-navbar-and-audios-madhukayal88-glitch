@@ -1,16 +1,21 @@
-<section class="audio-section">
-  <h2>Featured Audio Clip</h2>
-  <div class="audio-player-container">
-    <audio id="audio-player" controls aria-labelledby="audio-title">
-      <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <p id="audio-title" class="sr-only">A clip of a horse galloping.</p>
-  </div>
-
-  <div class="audio-transcript">
-    <h3>Transcript</h3>
-    <p>*(Sound of a horse galloping in a field)*</p>
-    <p>*(The sound fades as the horse disappears into the distance.)*</p>
-  </div>
-</section>
+<header>
+  <nav aria-label="Main navigation menu">
+    <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false">
+      <span class="sr-only">Toggle menu</span>
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+    <ul id="main-menu" class="nav-menu" role="menu">
+      <li role="none"><a role="menuitem" href="#home">Home</a></li>
+      <li role="none">
+        <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#services">
+          Services
+        </a>
+        <ul class="dropdown-menu">
+          <li role="none"><a role="menuitem" href="#web-design">Web Design</a></li>
+          <li role="none"><a role="menuitem" href="#seo">SEO</a></li>
+        </ul>
+      </li>
+      <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
