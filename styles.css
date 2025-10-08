@@ -1,2 +1,49 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
 
-/* Your CSS Code here. */
+/* Navigation bar styling */
+nav {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* Audio section styling */
+section {
+  margin-top: 30px;
+}
+
+section h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+audio {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
